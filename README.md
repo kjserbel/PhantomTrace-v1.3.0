@@ -34,7 +34,41 @@ Unlike traditional IP-based geolocation tools, PhantomTrace leverages **HTML5 Ge
 
 If the user clicks the link and explicitly allows location access — the trace is real.
 
----
+## 🧬 Project Lineage & Maintenance Status
+
+PhantomTrace is a **maintained and corrected fork** of the original **MapEye** project.
+
+MapEye is currently **unmaintained and partially broken**, with multiple issues affecting:
+- Execution flow
+- Data parsing
+- Dependency compatibility
+- API reliability
+- Runtime stability
+
+PhantomTrace was created to **restore full functionality**, improve robustness, and modernize the framework while preserving its original educational purpose.
+
+### 🔧 Key Improvements Over MapEye
+
+The following fixes and enhancements were implemented:
+
+- ✅ Rewritten and hardened core execution logic (`main()`)
+- ✅ Fixed crashes caused by empty or missing runtime files
+- ✅ Improved JSON parsing and error handling
+- ✅ Replaced deprecated IP geolocation APIs
+- ✅ Improved permission handling and location accuracy validation
+- ✅ Cleaned runtime artifacts and logging flow
+- ✅ Updated banner, naming, and project structure
+- ✅ Improved Termux and Linux compatibility
+- ✅ Updated documentation and usage flow
+
+PhantomTrace is **not a simple rename** — it is a functional repair and stabilization of a broken PoC.
+
+### ⚠️ Attribution
+
+Original concept and early implementation based on **MapEye**  
+Maintained, corrected, refactored, and documented by **ch3ckm8**
+
+This project remains a **Proof of Concept (PoC)** for educational and research purposes.
 
 ## 🎯 Data Collected (When Permissions Are Granted)
 
@@ -108,13 +142,13 @@ Each template mimics realistic interfaces to demonstrate permission-based tracki
 git clone https://github.com/ch3ckm8/PhantomTrace-v1.3.0.git
 cd PhantomTrace-v1.3.0
 python3 phantomtrace.py -t manual -k session_location
-🔹 Dependencies
+🔹 Dependencies (Linux)
 bash
 Copiar código
 apt update
 apt install python3 python3-pip php
 pip3 install requests
-🔹 Termux
+🔹 Termux (Android)
 bash
 Copiar código
 pkg update
@@ -135,7 +169,7 @@ python3 phantomtrace.py -t manual -p 4242
 
 # Generate KML for Google Earth
 python3 phantomtrace.py -t manual -k session_location
-Expose the port using ngrok, cloudflared, or any tunnel of your choice.
+Expose the local port using ngrok, cloudflared, or any tunneling service of your choice.
 
 🗺️ Output
 Real-time terminal output
@@ -144,7 +178,7 @@ CSV logging (db/results.csv)
 
 Optional KML file (Google Earth)
 
-Google Maps direct link
+Direct Google Maps link
 
 🧷 Operational Notes
 Accuracy depends on:
