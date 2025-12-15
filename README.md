@@ -1,7 +1,5 @@
 # 🕶️ PhantomTrace v1.3.0
-
-**PhantomTrace**  
-Precise Location & Device Intelligence Framework  
+**Precise Location & Device Intelligence Framework**
 
 *Silent. Precise. Unseen.*
 
@@ -24,7 +22,7 @@ PhantomTrace is a lightweight location intelligence framework that demonstrates 
 
 Unlike traditional IP-based geolocation tools, PhantomTrace leverages **HTML5 Geolocation APIs** to extract **real GPS coordinates directly from the device**.
 
-If the user clicks the link and explicitly allows location access — the trace is real.
+If the user clicks the link and explicitly allows location access — **the trace is real**.
 
 ---
 
@@ -46,17 +44,17 @@ PhantomTrace was created to **restore full functionality**, improve robustness, 
 
 ## 🔧 Key Improvements Over MapEye
 
-- Rewritten and hardened core execution logic (`main()`)
-- Fixed crashes caused by empty or missing runtime files
-- Improved JSON parsing and error handling
-- Replaced deprecated IP geolocation APIs
-- Improved permission handling and location accuracy validation
-- Cleaned runtime artifacts and logging flow
-- Updated banner, naming, and project structure
-- Improved Termux and Linux compatibility
-- Updated documentation and usage flow
+- ✅ Rewritten and hardened core execution logic (`main()`)
+- ✅ Fixed crashes caused by empty or missing runtime files
+- ✅ Improved JSON parsing and error handling
+- ✅ Replaced deprecated IP geolocation APIs
+- ✅ Improved permission handling and location accuracy validation
+- ✅ Cleaned runtime artifacts and logging flow
+- ✅ Updated banner, naming, and project structure
+- ✅ Improved Termux and Linux compatibility
+- ✅ Updated documentation and usage flow
 
-PhantomTrace is **not a simple rename** — it is a functional repair and stabilization of a broken PoC.
+> PhantomTrace is **not a simple rename** — it is a functional repair and stabilization of a broken PoC.
 
 ---
 
@@ -125,34 +123,52 @@ Each template mimics realistic interfaces to demonstrate permission-based tracki
 ## 🧪 Tested On
 
 - Kali Linux  
-- P
-  
-🔹 Dependencies (Linux)
+- Parrot OS  
+- BlackArch  
+- Ubuntu  
+- Kali NetHunter  
+- Termux (Android)  
 
+---
+
+## ⚙️ Installation
+
+### 🔹 Basic (Manual Tunnel)
+
+```bash
+git clone https://github.com/ch3ckm8/PhantomTrace-v1.3.0.git
+cd PhantomTrace-v1.3.0
+python3 phantomtrace.py -t manual -k session_location
+🔹 Dependencies (Linux)
+bash
+Copiar código
 apt update
 apt install python3 python3-pip php
 pip3 install requests
-
 🔹 Termux (Android)
-
+bash
+Copiar código
 pkg update
 pkg install python php
 pip install requests
-
 🚀 Usage
-
+bash
+Copiar código
 python3 phantomtrace.py -h
-
 Common Examples
-
+bash
+Copiar código
+# Manual tunnel
 python3 phantomtrace.py -t manual
-python3 phantomtrace.py -t manual -p 4242
-python3 phantomtrace.py -t manual -k session_location
 
+# Custom port
+python3 phantomtrace.py -t manual -p 4242
+
+# Generate KML
+python3 phantomtrace.py -t manual -k session_location
 Expose the local port using ngrok, cloudflared, or any tunneling service of your choice.
 
 🗺️ Output
-
 Real-time terminal output
 
 CSV logging (db/results.csv)
@@ -162,7 +178,6 @@ Optional KML file (Google Earth)
 Direct Google Maps link
 
 🧷 Operational Notes
-
 Accuracy depends on:
 
 GPS hardware
@@ -176,20 +191,20 @@ Location mode (High Accuracy recommended)
 Desktop systems may fallback to network-based approximation.
 
 🧠 Philosophy
-
 “The most dangerous exploits are not zero-days —
 they are permissions given willingly.”
 
 👤 Author
-
 ch3ckm8
 Independent Researcher / Offensive Security
 
 Silent execution. Clean traces.
 
 🕶️ Final Note
-
 If you’re reading this —
 remember: the browser is already a sensor.
 
 Stay sharp.
+
+yaml
+Copiar código
