@@ -1,17 +1,9 @@
 # 🕶️ PhantomTrace v1.3.0
 
-<p align="center">
-  <img src="https://forthebadge.com/images/badges/built-with-love.svg">
-</p>
+**PhantomTrace**  
+Precise Location & Device Intelligence Framework  
 
-<p align="center">
-  <b>PhantomTrace</b><br>
-  Precise Location & Device Intelligence Framework
-</p>
-
-<p align="center">
-  <i>Silent. Precise. Unseen.</i>
-</p>
+*Silent. Precise. Unseen.*
 
 ---
 
@@ -34,41 +26,48 @@ Unlike traditional IP-based geolocation tools, PhantomTrace leverages **HTML5 Ge
 
 If the user clicks the link and explicitly allows location access — the trace is real.
 
+---
+
 ## 🧬 Project Lineage & Maintenance Status
 
 PhantomTrace is a **maintained and corrected fork** of the original **MapEye** project.
 
 MapEye is currently **unmaintained and partially broken**, with multiple issues affecting:
-- Execution flow
-- Data parsing
-- Dependency compatibility
-- API reliability
-- Runtime stability
+
+- Execution flow  
+- Data parsing  
+- Dependency compatibility  
+- API reliability  
+- Runtime stability  
 
 PhantomTrace was created to **restore full functionality**, improve robustness, and modernize the framework while preserving its original educational purpose.
 
-### 🔧 Key Improvements Over MapEye
+---
 
-The following fixes and enhancements were implemented:
+## 🔧 Key Improvements Over MapEye
 
-- ✅ Rewritten and hardened core execution logic (`main()`)
-- ✅ Fixed crashes caused by empty or missing runtime files
-- ✅ Improved JSON parsing and error handling
-- ✅ Replaced deprecated IP geolocation APIs
-- ✅ Improved permission handling and location accuracy validation
-- ✅ Cleaned runtime artifacts and logging flow
-- ✅ Updated banner, naming, and project structure
-- ✅ Improved Termux and Linux compatibility
-- ✅ Updated documentation and usage flow
+- Rewritten and hardened core execution logic (`main()`)
+- Fixed crashes caused by empty or missing runtime files
+- Improved JSON parsing and error handling
+- Replaced deprecated IP geolocation APIs
+- Improved permission handling and location accuracy validation
+- Cleaned runtime artifacts and logging flow
+- Updated banner, naming, and project structure
+- Improved Termux and Linux compatibility
+- Updated documentation and usage flow
 
 PhantomTrace is **not a simple rename** — it is a functional repair and stabilization of a broken PoC.
 
-### ⚠️ Attribution
+---
+
+## ⚠️ Attribution
 
 Original concept and early implementation based on **MapEye**  
 Maintained, corrected, refactored, and documented by **ch3ckm8**
 
 This project remains a **Proof of Concept (PoC)** for educational and research purposes.
+
+---
 
 ## 🎯 Data Collected (When Permissions Are Granted)
 
@@ -125,53 +124,35 @@ Each template mimics realistic interfaces to demonstrate permission-based tracki
 
 ## 🧪 Tested On
 
-- Kali Linux
-- Parrot OS
-- BlackArch
-- Ubuntu
-- Kali NetHunter
-- Termux (Android)
-
----
-
-## ⚙️ Installation
-
-### 🔹 Basic (Manual Tunnel)
-
-```bash
-git clone https://github.com/ch3ckm8/PhantomTrace-v1.3.0.git
-cd PhantomTrace-v1.3.0
-python3 phantomtrace.py -t manual -k session_location
+- Kali Linux  
+- P
+  
 🔹 Dependencies (Linux)
-bash
-Copiar código
+
 apt update
 apt install python3 python3-pip php
 pip3 install requests
+
 🔹 Termux (Android)
-bash
-Copiar código
+
 pkg update
 pkg install python php
 pip install requests
+
 🚀 Usage
-bash
-Copiar código
+
 python3 phantomtrace.py -h
+
 Common Examples
-bash
-Copiar código
-# Manual tunnel mode
+
 python3 phantomtrace.py -t manual
-
-# Custom port
 python3 phantomtrace.py -t manual -p 4242
-
-# Generate KML for Google Earth
 python3 phantomtrace.py -t manual -k session_location
+
 Expose the local port using ngrok, cloudflared, or any tunneling service of your choice.
 
 🗺️ Output
+
 Real-time terminal output
 
 CSV logging (db/results.csv)
@@ -181,6 +162,7 @@ Optional KML file (Google Earth)
 Direct Google Maps link
 
 🧷 Operational Notes
+
 Accuracy depends on:
 
 GPS hardware
@@ -194,16 +176,19 @@ Location mode (High Accuracy recommended)
 Desktop systems may fallback to network-based approximation.
 
 🧠 Philosophy
+
 “The most dangerous exploits are not zero-days —
 they are permissions given willingly.”
 
 👤 Author
+
 ch3ckm8
 Independent Researcher / Offensive Security
 
 Silent execution. Clean traces.
 
 🕶️ Final Note
+
 If you’re reading this —
 remember: the browser is already a sensor.
 
