@@ -103,7 +103,7 @@ def template_select():
 
 	print(G + '[+]' + C + ' Select Interface Module:\n' + W)
 
-	with open('template/templates.json', 'r') as templ:
+	with open('templates/templates.json', 'r') as templ:
 		templ_json = json.loads(templ.read())
 
 	for item in templ_json['templates']:
@@ -126,8 +126,8 @@ def template_select():
 			templ_json['templates'][selected]['import_file']
 		))
 
-	info = f'template/{site}/php/info.txt'
-	result = f'template/{site}/php/result.txt'
+	info = f'templates/{site}/php/info.txt'
+	result = f'templates/{site}/php/result.txt'
 
 # ===============================
 # Serveo
@@ -176,7 +176,7 @@ def server():
 	print(G + '[+]' + C + ' Launching PHP backend...', end='')
 
 	with open('logs/php.log', 'w') as phplog:
-		subp.Popen(['php', '-S', f'0.0.0.0:{port}', '-t', f'template/{site}/'],
+		subp.Popen(['php', '-S', f'0.0.0.0:{port}', '-t', f'templates/{site}/'],
 		           stdout=phplog, stderr=phplog)
 
 	time.sleep(3)
@@ -345,7 +345,7 @@ def main():
     repeat()
 
 def kmlout(var_lat, var_lon):
-	with open('template/sample.kml', 'r') as kml_sample:
+	with open('templates/sample.kml', 'r') as kml_sample:
 		kml_sample_data = kml_sample.read()
 
 	kml_sample_data = kml_sample_data.replace('LONGITUDE', var_lon.strip(' deg'))
