@@ -54,7 +54,7 @@ PhantomTrace was created to **restore full functionality**, improve robustness, 
 - ✅ Improved Termux and Linux compatibility
 - ✅ Updated documentation and usage flow
 
-> PhantomTrace is **not a simple rename** — it is a functional repair and stabilization of a broken PoC.
+ **PhantomTrace is not a simple rename** — it is a functional repair and stabilization of a broken PoC.
 
 ---
 
@@ -139,24 +139,24 @@ Each template mimics realistic interfaces to demonstrate permission-based tracki
   cd PhantomTrace-v1.3.0
   python3 phantomtrace.py -t manual -k session_location
 ```
-## 🔹 Dependencies (Linux)
+🔹 Dependencies (Linux)
 ```bash   
    apt update
    apt install python3 python3-pip php
    pip3 install requests
 ```
-## 🔹 Termux (Android)
+🔹 Termux (Android)
 ```bash
    pkg update
    pkg install python php
    pip install requests
 ```
-## 🚀 Usage
+ 🚀 Usage
 ```bash
    python3 phantomtrace.py -h
    Common Examples
  ```
-## Manual tunnel
+ Manual tunnel
 ```bash  
   python3 phantomtrace.py -t manual
 
@@ -170,7 +170,7 @@ Each template mimics realistic interfaces to demonstrate permission-based tracki
 ```
 Expose the local port using ngrok, cloudflared, or any tunneling service of your choice.
 
-## 🗺️ Output
+ 🗺️ Output
 
 Real-time terminal output
 
@@ -180,7 +180,7 @@ Optional KML file (Google Earth)
 
 Direct Google Maps link
 
-## 🧷 Operational Notes
+ 🧷 Operational Notes
 
 Accuracy depends on:
 
@@ -194,12 +194,12 @@ Location mode (High Accuracy recommended)
 
 Desktop systems may fallback to network-based approximation.
 
-## 🧠 Philosophy
+ 🧠 Philosophy
 
 “The most dangerous exploits are not zero-days —
 they are permissions given willingly.”
 
-## 👤 Author
+ 👤 Author
 ch3ckm8
 Independent Researcher / Offensive Security
 
