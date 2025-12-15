@@ -137,6 +137,7 @@ Each template mimics realistic interfaces to demonstrate permission-based tracki
 ```bash
   git clone https://github.com/ch3ckm8/PhantomTrace-v1.3.0.git
   cd PhantomTrace-v1.3.0
+  chmod +x panthomtrace.py
   python3 phantomtrace.py -t manual -k session_location
 ```
 🔹 Dependencies (Linux)
