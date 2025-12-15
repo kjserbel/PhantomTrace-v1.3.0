@@ -205,6 +205,3 @@ If you’re reading this —
 remember: the browser is already a sensor.
 
 Stay sharp.
-
-yaml
-Copiar código
